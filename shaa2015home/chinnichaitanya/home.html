@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="resp.css" rel="stylesheet">
-        <link href="component_hexagon.css" rel="stylesheet">
+        <link href="gen_css/resp.css" rel="stylesheet">
+        <link href="gen_css/component_hexagon.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="menu/css/component_menu.css" />      
         <script src="menu/js/modernizr.custom.js"></script>
         <script src="jquery.min.js"></script>
@@ -11,15 +11,21 @@
 		<div>
             <section>
 				<nav class="cl-effect-21" id="cl-effect-21">
-					<a href="#" style="position:absolute; top:7%; left:44%; z-index:2">EVENTS</a>
-					<a href="#" style="position:absolute; top:26%; left:22%; z-index:2">SPONSORS</a>
-					<a href="#" style="position:absolute; top:26%; left:64%; z-index:2">SHOWS</a>
-					<a href="#" style="position:absolute; top:63%; left:23%; z-index:2">LECTURES</a>
-					<a href="#" style="position:absolute; top:63%; left:63%; z-index:2">CONTACT</a>
-					<a href="#" style="position:absolute; top:87%; left:43%; z-index:2">ABOUT US</a>
+					<a id="events" href="#" style="position:absolute; top:7%; left:44%; z-index:2">EVENTS</a>
+					<a id="spons" href="#" style="position:absolute; top:26%; left:22%; z-index:2">SPONSORS</a>
+					<a id="shows" href="#" style="position:absolute; top:26%; left:64%; z-index:2">SHOWS</a>
+					<a id="lectures" href="#" style="position:absolute; top:63%; left:23%; z-index:2">LECTURES</a>
+					<a id="contact" href="#" style="position:absolute; top:63%; left:63%; z-index:2">CONTACT</a>
+					<a id="about_us" href="#" style="position:absolute; top:87%; left:43%; z-index:2">ABOUT US</a>
 				</nav>
 			</section>
         </div>  
+        
+        <img id="shaa_cube" src="pics/shaa2015_logo_75.png" style="position:absolute; z-index:2; top:35%; left:36%">
+        
+        <img id="spons_img" src="pics/spons_75.png" style="position:absolute; z-index:1; top:15%; left:38%; opacity:0">
+        <img id="lectures_img" src="pics/lectures_75.png" style="position:absolute; z-index:1; top:20%; left:42%; opacity:0">
+        <img id="events_img" src="pics/events_75.png" style="position:absolute; z-index:1; top:23%; left:36.25%; opacity:0">
         
 		<section id="set-7">
             <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b">
@@ -121,7 +127,7 @@
                   $(this).css("font-size","1.3"); 
                   $(this).css("font-weight","initial");    
                });
-                $("#close_menu").click(function(){
+               $("#close_menu").click(function(){
                     $("#menu_rhs").animate({
                       right: '-70%',
                       opacity: '0',
@@ -132,6 +138,21 @@
                       opacity: '0'                  
                     },"slow");                      
                 });
+                $("#spons").hover(function(){
+                    $("#spons_img").css("opacity","1");
+                },function(){
+                    $("#spons_img").css("opacity","0");
+                });
+                $("#lectures").hover(function(){
+                    $("#lectures_img").css("opacity","1");
+                },function(){
+                    $("#lectures_img").css("opacity","0");
+                });
+                $("#events").hover(function(){
+                    $("#events_img").css("opacity","1");
+                },function(){
+                    $("#events_img").css("opacity","0");
+                });                
                 
             });   
         </script>
