@@ -3,7 +3,7 @@
     <head>
         <link href="resp.css" rel="stylesheet">
         <link href="component_hexagon.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="menu/css/component_menu.css" />         
+		<link rel="stylesheet" type="text/css" href="menu/css/component_menu.css" />      
         <script src="menu/js/modernizr.custom.js"></script>
         <script src="jquery.min.js"></script>
     </head>
@@ -38,7 +38,7 @@
                 </tr>
 //gap1              
                 <tr>
-                    <td id="close_menu" class="menu_options">X Back to Website</td>
+                    <td id="close_menu" class="menu_options" style="color:#99C68E">X Back to Website</td>
                 </tr>
 //gap2               
                 <tr>
@@ -73,13 +73,13 @@
                     <td class="header" style="font-family: Cursive; font-size:2em"><i>follow us on</i></td>
                 </tr>  
                 <tr>
-                    <td id="facebook" class="menu_options">Facebook</td>
+                    <td id="facebook" class="menu_options" style="color:#0020C2">Facebook</td>
                 </tr>
                 <tr>
-                    <td id="twitter" class="menu_options">Twitter</td>
+                    <td id="twitter" class="menu_options" style="color:#38ACEC">Twitter</td>
                 </tr>
                 <tr>
-                    <td id="you_tube" class="menu_options">You Tube</td>
+                    <td id="you_tube" class="menu_options" style="color:#F62217">You Tube</td>
                 </tr>                        
             </table>            
         </div> 
@@ -103,11 +103,23 @@
                   },"slow");  
                });  
                $(".menu_options").hover(function(){
-                  $(this).css("background-color","white");
+                  $(this).css("background-color","#EBF4FA");
                   $(this).css("color","black");
+                  $("#you_tube").css("color","#F62217");
+                  $("#facebook").css("color","#0020C2");
+                  $("#twitter").css("color","#38ACEC"); 
+                  $("#close_menu").css("color","#99C68E"); 
+                  $(this).css("font-size","1.5em"); 
+                  $(this).css("font-weight","bolder"); 
                 },function(){
                   $(this).css("background-color","black"); 
-                  $(this).css("color","white");                                
+                  $(this).css("color","white"); 
+                  $("#you_tube").css("color","#F62217");
+                  $("#facebook").css("color","#0020C2");
+                  $("#twitter").css("color","#38ACEC"); 
+                  $("#close_menu").css("color","#99C68E");    
+                  $(this).css("font-size","1.3"); 
+                  $(this).css("font-weight","initial");    
                });
                 $("#close_menu").click(function(){
                     $("#menu_rhs").animate({
@@ -121,7 +133,7 @@
                     },"slow");                      
                 });
                 
-            });    
+            });   
         </script>
 	</body>
 </html>
