@@ -14,7 +14,7 @@ nav a {
   @media all and (min-width: 1024px) {
     nav a {
       float: none; } }
-  @media all and (max-width: 360px) {
+  @media all and (max-width: 500px) {
     nav a {
       width: auto;
       letter-spacing: 0.2px;
@@ -22,7 +22,7 @@ nav a {
       font-weight: 100;
       left-margin: 70%;
       float: left; } }
-  @media all and (max-height: 360px) {
+  @media all and (max-height: 500px) {
     nav a {
       width: auto;
       letter-spacing: 0.2px;
@@ -41,7 +41,7 @@ nav a {
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s; }
-  @media all and (max-width: 360px) {
+  @media all and (max-width: 500px) {
     .hi-icon-effect-7b .hi-icon:before {
       -webkit-transform: scale(0.4);
       -moz-transform: scale(0.4);
@@ -55,9 +55,20 @@ nav a {
   -ms-transform: scale(1);
   transform: scale(1);
   opacity: 1; }
-  @media all and (max-width: 360px) {
+  @media all and (max-width: 500px) {
     .no-touch .hi-icon-effect-7b .hi-icon:hover:before {
       -webkit-transform: scale(0.625);
       -moz-transform: scale(0.625);
       -ms-transform: scale(0.625);
       transform: scale(0.625); } }
+
+@media all and (max-width: 500px) {
+  .menu_options {
+    padding-left: 1%;
+    padding-right: 1%; } }
+
+@media all and (max-width: 500px) {
+  .header {
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 1.5em; } }

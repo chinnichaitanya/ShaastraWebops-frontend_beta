@@ -16,7 +16,7 @@ nav a{
         float: none;
     }
     
-    @media all and (max-width: 360px){
+    @media all and (max-width: 500px){
         width: auto;
         letter-spacing: 0.2px;
         font-size: 0.7em;
@@ -25,7 +25,7 @@ nav a{
         float: left;
     }    
     
-    @media all and (max-height: 360px){
+    @media all and (max-height: 500px){
         width: auto;
         letter-spacing: 0.2px;
         font-size: 0.7em;
@@ -47,7 +47,7 @@ nav a{
 	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
 	transition: transform 0.2s, opacity 0.2s;
     
-    @media all and (max-width: 360px){
+    @media all and (max-width: 500px){
         -webkit-transform: scale(0.4);
         -moz-transform: scale(0.4);
         -ms-transform: scale(0.4);
@@ -62,10 +62,25 @@ nav a{
 	transform: scale(1);
 	opacity: 1;
     
-    @media all and (max-width: 360px){
+    @media all and (max-width: 500px){
         -webkit-transform: scale(0.625);
         -moz-transform: scale(0.625);
         -ms-transform: scale(0.625);
         transform: scale(0.625);
+    }    
+}
+
+.menu_options{
+    @media all and (max-width: 500px){
+        padding-left: 1%;
+        padding-right: 1%;      
+    }    
+}  
+
+.header{
+    @media all and (max-width: 500px){
+        padding-left: 1%;
+        padding-right: 1%;  
+        font-size: 1.5em;
     }    
 }

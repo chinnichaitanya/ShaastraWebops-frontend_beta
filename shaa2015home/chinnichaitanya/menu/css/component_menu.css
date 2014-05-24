@@ -50,8 +50,6 @@
 	content: "\e006";
 }
 
-/* Effect 7 */
-
 .no-touch .hi-icon-effect-7 .hi-icon:hover {
 	color: white;
 }
@@ -99,4 +97,33 @@ a {
 #set-7 {
 	background: none;
 }
+
+/* Menu options */
+
+.menu_options{
+    color: white;
+    font-family: Verdana;
+    font-size: 1.3em;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    text-align: center;
+    height: 5%;
+}    
+
+/* Menu headers */
+
+.header{
+    color: white;
+    font-family: Verdana;
+    font-size: 2em;    
+    width: 100%;
+    text-align: center;
+    height: 10%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}  
+
 
