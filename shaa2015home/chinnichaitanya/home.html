@@ -38,7 +38,7 @@
                 </tr>
 //gap1              
                 <tr>
-                    <td class="menu_options">X Back to Website</td>
+                    <td id="close_menu" class="menu_options">X Back to Website</td>
                 </tr>
 //gap2               
                 <tr>
@@ -109,6 +109,17 @@
                   $(this).css("background-color","black"); 
                   $(this).css("color","white");                                
                });
+                $("#close_menu").click(function(){
+                    $("#menu_rhs").animate({
+                      right: '-70%',
+                      opacity: '0',
+                      width: '0%'
+                    },"slow");  
+                    $("#menu_popup").animate({
+                      left: '-30%',
+                      opacity: '0'                  
+                    },"slow");                      
+                });
                 
             });    
         </script>
