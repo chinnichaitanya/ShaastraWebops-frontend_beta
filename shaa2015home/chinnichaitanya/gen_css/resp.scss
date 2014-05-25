@@ -1,3 +1,7 @@
+@function pem($pixels){
+    @return #{$pixels/16.0}em   
+}
+
 nav a{
     position: relative;
 	display: inline-block;
@@ -12,11 +16,11 @@ nav a{
 	font-size: 1.5em;
     font-family: Verdana;
   
-    @media all and (min-width: 1024px){
+    @media all and (min-width: pem(1024)){
         float: none;
     }
     
-    @media all and (max-width: 600px){
+    @media all and (max-width: pem(600)){
         width: auto;
         letter-spacing: 0.2px;
         font-size: 0.7em;
@@ -25,7 +29,7 @@ nav a{
         float: left;
     }    
     
-    @media all and (max-height: 600px){
+    @media all and (max-height: pem(600)){
         width: auto;
         letter-spacing: 0.2px;
         font-size: 0.7em;
@@ -47,7 +51,7 @@ nav a{
 	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
 	transition: transform 0.2s, opacity 0.2s;
     
-    @media all and (max-width: 600px){
+    @media all and (max-width: pem(600)){
         -webkit-transform: scale(0.4);
         -moz-transform: scale(0.4);
         -ms-transform: scale(0.4);
@@ -62,7 +66,7 @@ nav a{
 	transform: scale(1);
 	opacity: 1;
     
-    @media all and (max-width: 600px){
+    @media all and (max-width: pem(600)){
         -webkit-transform: scale(0.625);
         -moz-transform: scale(0.625);
         -ms-transform: scale(0.625);
@@ -71,49 +75,71 @@ nav a{
 }
 
 .menu_options{
-    @media all and (max-width: 500px){
+    @media all and (max-width: pem(500)){
         padding-left: 1%;
         padding-right: 1%;      
     }    
 }  
 
 .header{
-    @media all and (max-width: 500px){
+    @media all and (max-width: pem(500)){
         padding-left: 1%;
         padding-right: 1%;  
         font-size: 1.5em;
     }    
 }
 
+// cups at 175 & 200 zoom at and near min width
+
 #shaa_cube{
-    @media all and (max-width: 900px){
-        height: 25%;
-        width: 50%;
+// for 175    
+    @media all and (min-width: pem(680)) and (max-width: pem(900)){
+        height: 31%;
+        width: 33%;
+    }
+// for 250    
+    @media all and (min-width: pem(500)) and (max-width: pem(680)){
+        height: 35%;
+        width: 37%;
+    }
+    @media all and (min-width: pem(350)) and (max-width: pem(500)){
+        height: 30%;
+        width: 45%;
+    }
+//  for 150    
+    @media all and (min-width: pem(900)) and (max-width: pem(1000)){
+        width: 33%;  
+        height: 31%;
+    }
+// for 125    
+    @media all and (min-width: pem(1000)) and (max-width: pem(1200)){
+        width: 30%;
+        height: 28%;
     }
 }
 
 #spons_img{
-    @media all and (max-width: 680px){
+    @media all and (max-width: pem(680)){
         height: 50%;
         width: 50%;
     }      
 }
 
 #events_img{
-    @media all and (max-width: 680px){
+    @media all and (max-width: pem(680)){
         height: 50%;
         width: 50%;
     }
 }
 
 #lectures_img{
-    @media all and (max-width: 680px){
+    @media all and (max-width: pem(680)){
         height: 50%;   
     }
 }
 
 #contacts_img{
-    @media all and (max-width: 680px){
+    @media all and (max-width: pem(680)){
         height: 50%;
     }
 }

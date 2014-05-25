@@ -11,10 +11,10 @@ nav a {
   text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
   font-size: 1.5em;
   font-family: Verdana; }
-  @media all and (min-width: 1024px) {
+  @media all and (min-width: 64em) {
     nav a {
       float: none; } }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 37.5em) {
     nav a {
       width: auto;
       letter-spacing: 0.2px;
@@ -22,7 +22,7 @@ nav a {
       font-weight: 100;
       left-margin: 70%;
       float: left; } }
-  @media all and (max-height: 600px) {
+  @media all and (max-height: 37.5em) {
     nav a {
       width: auto;
       letter-spacing: 0.2px;
@@ -41,7 +41,7 @@ nav a {
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 37.5em) {
     .hi-icon-effect-7b .hi-icon:before {
       -webkit-transform: scale(0.4);
       -moz-transform: scale(0.4);
@@ -55,43 +55,59 @@ nav a {
   -ms-transform: scale(1);
   transform: scale(1);
   opacity: 1; }
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 37.5em) {
     .no-touch .hi-icon-effect-7b .hi-icon:hover:before {
       -webkit-transform: scale(0.625);
       -moz-transform: scale(0.625);
       -ms-transform: scale(0.625);
       transform: scale(0.625); } }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 31.25em) {
   .menu_options {
     padding-left: 1%;
     padding-right: 1%; } }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 31.25em) {
   .header {
     padding-left: 1%;
     padding-right: 1%;
     font-size: 1.5em; } }
 
-@media all and (max-width: 900px) {
+@media all and (min-width: 42.5em) and (max-width: 56.25em) {
   #shaa_cube {
-    height: 25%;
-    width: 50%; } }
+    height: 31%;
+    width: 33%; } }
+@media all and (min-width: 31.25em) and (max-width: 42.5em) {
+  #shaa_cube {
+    height: 35%;
+    width: 37%; } }
+@media all and (min-width: 21.875em) and (max-width: 31.25em) {
+  #shaa_cube {
+    height: 30%;
+    width: 45%; } }
+@media all and (min-width: 56.25em) and (max-width: 62.5em) {
+  #shaa_cube {
+    width: 33%;
+    height: 31%; } }
+@media all and (min-width: 62.5em) and (max-width: 75em) {
+  #shaa_cube {
+    width: 30%;
+    height: 28%; } }
 
-@media all and (max-width: 680px) {
+@media all and (max-width: 42.5em) {
   #spons_img {
     height: 50%;
     width: 50%; } }
 
-@media all and (max-width: 680px) {
+@media all and (max-width: 42.5em) {
   #events_img {
     height: 50%;
     width: 50%; } }
 
-@media all and (max-width: 680px) {
+@media all and (max-width: 42.5em) {
   #lectures_img {
     height: 50%; } }
 
-@media all and (max-width: 680px) {
+@media all and (max-width: 42.5em) {
   #contacts_img {
     height: 50%; } }
