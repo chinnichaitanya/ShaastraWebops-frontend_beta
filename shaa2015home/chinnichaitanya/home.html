@@ -15,7 +15,7 @@
 					<a id="spons" href="#" style="position:absolute; top:26%; left:22%; z-index:2">SPONSORS</a>
 					<a id="shows" href="#" style="position:absolute; top:26%; left:64%; z-index:2">SHOWS</a>
 					<a id="lectures" href="#" style="position:absolute; top:63%; left:23%; z-index:2">LECTURES</a>
-					<a id="contact" href="#" style="position:absolute; top:63%; left:63%; z-index:2">CONTACT</a>
+					<a id="contacts" href="#" style="position:absolute; top:63%; left:63%; z-index:2">CONTACT</a>
 					<a id="about_us" href="#" style="position:absolute; top:87%; left:43%; z-index:2">ABOUT US</a>
 				</nav>
 			</section>
@@ -26,6 +26,7 @@
         <img id="spons_img" src="pics/spons_75.png" style="position:absolute; z-index:1; top:15%; left:38%; opacity:0">
         <img id="lectures_img" src="pics/lectures_75.png" style="position:absolute; z-index:1; top:20%; left:42%; opacity:0">
         <img id="events_img" src="pics/events_75.png" style="position:absolute; z-index:1; top:23%; left:36.25%; opacity:0">
+        <img id="contacts_img" src="pics/contacts_75.png" style="position:absolute; z-index:1; top:20%; left:40%; opacity:0">
         
 		<section id="set-7">
             <div class="hi-icon-wrap hi-icon-effect-7 hi-icon-effect-7b">
@@ -153,6 +154,11 @@
                 },function(){
                     $("#events_img").css("opacity","0");
                 });                
+                $("#contacts").hover(function(){
+                    $("#contacts_img").css("opacity","1");
+                },function(){
+                    $("#contacts_img").css("opacity","0");
+                });                                
                 
             });   
         </script>
